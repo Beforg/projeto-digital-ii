@@ -1,0 +1,73 @@
+# Quartus II - arquivos temporários e gerados
+
+# Database / compilation
+db/
+incremental_db/
+
+# Simulation
+simulation/
+sim/
+
+# Output files
+output_files/
+
+# Programmer / programming files
+*.sof
+*.pof
+*.jic
+*.rpd
+
+# Compilation reports / generated reports
+*.rpt
+*.summary
+*.done
+*.pin
+*.qws
+
+# Quartus generated files
+*.bak
+*.chg
+*.cmp
+*.qdf
+*.smsg
+*.eqn
+*.fit
+*.map
+*.sta
+*.asm
+*.twr
+*.sld
+*.html
+*.htm
+
+# IP / MegaWizard generated temporary files
+*_sim/
+*_inst.v
+*_inst.vhd
+*.bsf
+
+# Lock files
+*.lock
+
+# Quartus workspace
+*.qws
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*~
+*.swp
+*.swo
+
+# VS Code
+.vscode/
+
+# Eclipse / other IDEs
+.project
+.cproject
+.settings/
+
+# Logs
+*.log
