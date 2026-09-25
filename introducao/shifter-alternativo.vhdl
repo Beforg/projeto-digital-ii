@@ -14,7 +14,7 @@ architecture RTL of Shifter4Bits is
 	signal outMux1, outMux2, outMux3, outMux4: std_logic;
 	signal outReg1, outReg2, outReg3, outReg4: std_logic;
 begin
-	process(clock);
+	process(clock)
 	begin
 		if rising_edge(clock) then
 			if seletor = "00" then
@@ -37,13 +37,13 @@ begin
 				outMux2 <= outReg3;
 				outMux3 <= outReg4;
 				outMux4 <= outReg1;	
-			end if
+			end if;
 			outReg1 <= outMux1;
 			outReg2 <= outMux2;
 			outReg3 <= outMux3;
 			outReg4 <= outMux4;
-		end if
-	end process
+		end if;
+	end process;
 
 	s <= outReg1 & outReg2 & outReg3 & outReg4;
 end RTL;
