@@ -11,7 +11,7 @@ end full_adder;
 
 architecture Behavioral of full_adder is
 begin
-    process(a, b)
+    process(a, b, cin)
     begin
         sum <= a xor b xor cin;
         cout <= (a and b) or (cin and (a xor b));
