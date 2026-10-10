@@ -19,7 +19,7 @@ entity Sub is
 		reset_top  : in std_logic;
 		a_top	     : in std_logic_vector  ((DATA_WIDTH_TOP-1) downto 0);
 		b_top	     : in std_logic_vector  ((DATA_WIDTH_TOP-1) downto 0);
-		c_top 	  : out std_logic_vector ((DATA_WIDTH_TOP-1) downto 0);
+		c_top 	  : out std_logic_vector ((DATA_WIDTH_TOP-1) downto 0)
 		
 	);
 
@@ -89,20 +89,6 @@ PC: 	PO_Sub
 							en_inputs => en_inputs_conect,
 							en_regAdder => en_regAdder_conect,
 							c_PO => c_top,
-							
-						-- Portas de depuração
-							outMux1_view => outMux1_view,
-							outMux2_view => outMux2_view, 
-							outAdder_view => outAdder_view, 
-							outRegAdder_view => outRegAdder_view, 
-							outRegA_view => outRegA_view, 
-							outRegB_view => outRegB_view, 
-							outInv_view => outInv_view
 						);	
 
-ctrl_mux1_view <= ctrl_mux1_conect; 
-ctrl_mux2_view <= Ctrl_mux2_conect; 
-en_inputs_view <= en_inputs_conect; 
-en_regAdder_view <= en_regAdder_conect; 
-			
 end rtlBSN;
