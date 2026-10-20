@@ -33,7 +33,7 @@ component Reg is
         clk: in std_logic;
         output: out std_logic_vector((DATA_WIDTH - 1) downto 0)
     );
-end Reg;
+end component;
 component adder is
     generic(
         datawidth: natural := 8 
@@ -43,7 +43,7 @@ component adder is
         src2: in std_logic_vector(datawidth-1 downto 0);
         output: out std_logic_vector(datawidth-1 downto 0)
     ); 
-end adder;
+end component;
 component sub is
     generic(
         datawidth: natural := 8 
@@ -53,7 +53,7 @@ component sub is
         src2: in std_logic_vector(datawidth-1 downto 0);
         output: out std_logic_vector(datawidth-1 downto 0)
     ); 
-end sub;
+end component;
 begin
     Reg1: Reg
         generic map (DATA_WIDTH => datawidth)
