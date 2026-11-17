@@ -1,3 +1,4 @@
+/* Simulator = Quartus II Simulator */
 /*
 WARNING: Do NOT edit the input and output ports in this file in a text
 editor if you plan to continue editing the block that represents it in
@@ -252,94 +253,94 @@ SIGNAL("t")
 	PARENT = "";
 }
 
-SIGNAL("sum_out_d_s")
+SIGNAL("debug_soma_s")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
 	WIDTH = 8;
 	LSB_INDEX = 0;
-	DIRECTION = BURIED;
+	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
-SIGNAL("sum_out_d_s[7]")
+SIGNAL("debug_soma_s[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "sum_out_d_s";
+	DIRECTION = OUTPUT;
+	PARENT = "debug_soma_s";
 }
 
-SIGNAL("sum_out_d_s[6]")
+SIGNAL("debug_soma_s[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "sum_out_d_s";
+	DIRECTION = OUTPUT;
+	PARENT = "debug_soma_s";
 }
 
-SIGNAL("sum_out_d_s[5]")
+SIGNAL("debug_soma_s[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "sum_out_d_s";
+	DIRECTION = OUTPUT;
+	PARENT = "debug_soma_s";
 }
 
-SIGNAL("sum_out_d_s[4]")
+SIGNAL("debug_soma_s[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "sum_out_d_s";
+	DIRECTION = OUTPUT;
+	PARENT = "debug_soma_s";
 }
 
-SIGNAL("sum_out_d_s[3]")
+SIGNAL("debug_soma_s[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "sum_out_d_s";
+	DIRECTION = OUTPUT;
+	PARENT = "debug_soma_s";
 }
 
-SIGNAL("sum_out_d_s[2]")
+SIGNAL("debug_soma_s[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "sum_out_d_s";
+	DIRECTION = OUTPUT;
+	PARENT = "debug_soma_s";
 }
 
-SIGNAL("sum_out_d_s[1]")
+SIGNAL("debug_soma_s[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "sum_out_d_s";
+	DIRECTION = OUTPUT;
+	PARENT = "debug_soma_s";
 }
 
-SIGNAL("sum_out_d_s[0]")
+SIGNAL("debug_soma_s[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "sum_out_d_s";
+	DIRECTION = OUTPUT;
+	PARENT = "debug_soma_s";
 }
 
 TRANSITION_LIST("clk")
@@ -397,7 +398,7 @@ TRANSITION_LIST("i[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -415,7 +416,7 @@ TRANSITION_LIST("i[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -514,8 +515,8 @@ TRANSITION_LIST("rst")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 920.0;
+		LEVEL 1 FOR 40.0;
+		LEVEL 0 FOR 960.0;
 	}
 }
 
@@ -528,75 +529,75 @@ TRANSITION_LIST("t")
 	}
 }
 
-TRANSITION_LIST("sum_out_d_s[7]")
+TRANSITION_LIST("debug_soma_s[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("sum_out_d_s[6]")
+TRANSITION_LIST("debug_soma_s[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("sum_out_d_s[5]")
+TRANSITION_LIST("debug_soma_s[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("sum_out_d_s[4]")
+TRANSITION_LIST("debug_soma_s[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("sum_out_d_s[3]")
+TRANSITION_LIST("debug_soma_s[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("sum_out_d_s[2]")
+TRANSITION_LIST("debug_soma_s[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("sum_out_d_s[1]")
+TRANSITION_LIST("debug_soma_s[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("sum_out_d_s[0]")
+TRANSITION_LIST("debug_soma_s[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -818,9 +819,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sum_out_d_s";
+	CHANNEL = "debug_soma_s";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 22;
 	TREE_LEVEL = 0;
 	CHILDREN = 23, 24, 25, 26, 27, 28, 29, 30;
@@ -828,9 +829,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sum_out_d_s[7]";
+	CHANNEL = "debug_soma_s[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 23;
 	TREE_LEVEL = 1;
 	PARENT = 22;
@@ -838,9 +839,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sum_out_d_s[6]";
+	CHANNEL = "debug_soma_s[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 24;
 	TREE_LEVEL = 1;
 	PARENT = 22;
@@ -848,9 +849,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sum_out_d_s[5]";
+	CHANNEL = "debug_soma_s[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 25;
 	TREE_LEVEL = 1;
 	PARENT = 22;
@@ -858,9 +859,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sum_out_d_s[4]";
+	CHANNEL = "debug_soma_s[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 26;
 	TREE_LEVEL = 1;
 	PARENT = 22;
@@ -868,9 +869,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sum_out_d_s[3]";
+	CHANNEL = "debug_soma_s[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 27;
 	TREE_LEVEL = 1;
 	PARENT = 22;
@@ -878,9 +879,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sum_out_d_s[2]";
+	CHANNEL = "debug_soma_s[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 28;
 	TREE_LEVEL = 1;
 	PARENT = 22;
@@ -888,9 +889,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sum_out_d_s[1]";
+	CHANNEL = "debug_soma_s[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 29;
 	TREE_LEVEL = 1;
 	PARENT = 22;
@@ -898,9 +899,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sum_out_d_s[0]";
+	CHANNEL = "debug_soma_s[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 30;
 	TREE_LEVEL = 1;
 	PARENT = 22;

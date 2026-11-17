@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP3C25F324C6
 set_global_assignment -name TOP_LEVEL_ENTITY sqrt
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:06:42  NOVEMBER 13, 2026"
-set_global_assignment -name LAST_QUARTUS_VERSION 13.0
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -56,5 +56,6 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE "sqrt-wave.vwf"
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/design/quartus/sqrt/sqrt-wave.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "/home/bruno-forgiarini/Documentos/estudos/faculdade/5o Semestre/pd-ii/repo/sqrt/sqrt-wave.vwf"
