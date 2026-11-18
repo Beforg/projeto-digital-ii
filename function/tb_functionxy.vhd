@@ -21,7 +21,7 @@ signal tb_clk, tb_rst, tb_start: std_logic;
 signal tb_x, tb_result: std_logic_vector(7 downto 0);
 signal tb_y: std_logic_vector(3 downto 0);
 
-constant CLK_TIME : time := 20 ns;
+constant CLK_PERIOD : time := 20 ns;
 
 begin
 
@@ -38,9 +38,9 @@ begin
 	clk_process: process
 	begin
 		tb_clk <= '0'; 
-		wait CLK_TIME / 2;
+		wait for CLK_PERIOD / 2;
 		tb_clk <= '1';
-		wait CLK_TIME / 2;
+		wait for CLK_PERIOD / 2;
 	end process;
 	
 	simulation_process: process
@@ -53,8 +53,8 @@ begin
         wait for CLK_PERIOD;
 
         -- Teste 1: Calcular 3 elevado a 3 (3^3 = 27)
-        tb_x <= std_logic_vector(to_unsigned(3, 8)); -- x = 3
-        tb_y <= std_logic_vector(to_unsigned(3, 4)); -- y = 3
+        tb_x <= "00000011"; -- x = 3
+        tb_y <= "0011"; -- y = 3
         
         -- Dá um pulso no Start para a FSM sair do INIT e ir para CALC
         tb_start <= '1';
@@ -65,8 +65,8 @@ begin
         wait for CLK_PERIOD * 5; 
 
         -- Teste 2: Se quiser testar outro valor, ex: 2^4 = 16
-        tb_x <= std_logic_vector(to_unsigned(2, 8)); 
-        tb_y <= std_logic_vector(to_unsigned(4, 4)); 
+        tb_x <= "00000010"; -- x = 3
+        tb_y <= "0100"; -- y = 3 
         
         tb_start <= '1';
         wait for CLK_PERIOD;
@@ -78,5 +78,5 @@ begin
         wait;
 	end process;
 
-constant 
+end architecture;
 
